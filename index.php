@@ -37,7 +37,7 @@
 
    echo $txt;
 
-// Stampiamo la lunghezza della frase
+// Stampiamo la lunghezza della frase con mb_strlen che misura il numero dei caratteri
 
    echo "Lunghezza Frase:<br><br> ";
    
