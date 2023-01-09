@@ -13,7 +13,7 @@
 
      // Creiamo la variabile testo che andremo poi a modificare
 
-        $txt = " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos doloremque explicabo architecto aut a dolores odio totam reprehenderit nihil, ratione labore aperiam dolore ea excepturi officia iure, consequuntur voluptates. Consequatur!  <br>";
+        $txt = " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos doloremque explicabo architecto aut a dolores odio totam reprehenderit nihil, ratione labore aperiam dolore ea excepturi officia iure, consequuntur voluptates. Consequatur!  <br><br>";
         
       // Stampiamo a schermo
 
@@ -21,9 +21,13 @@
 
      // Stampiamo la lunghezza della frase
 
-        echo "Lunghezza Frase: <br>";
+        echo "Lunghezza Frase:<br><br> ";
         
         echo strlen($txt)  ;
+
+        echo "  caratteri";
+
+        echo "<br><br>";
 
       // Prendiamo la nostra variabile con la frase da censurare tramite variabile super globale $_GET
 
@@ -37,9 +41,11 @@
 
        echo " $modifiedTxt <br>";
 
-       echo " Lunghezza Frase : <br>";
+       echo " Lunghezza Frase : <br><br>";
 
        echo strlen( $modifiedTxt);
+
+       echo "  caratteri";
 
 
 
