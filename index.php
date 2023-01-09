@@ -8,48 +8,54 @@
     <title>BadWord</title>
 </head>
 <body>
-  
-     <?php
+     <header>
+          <h1>
+               BAD WORD
+          </h1>
+     </header>
+   <div class="container">
+   <?php
 
-     // Creiamo la variabile testo che andremo poi a modificare
+// Creiamo la variabile testo che andremo poi a modificare
 
-        $txt = " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos doloremque explicabo architecto aut a dolores odio totam reprehenderit nihil, ratione labore aperiam dolore ea excepturi officia iure, consequuntur voluptates. Consequatur!  <br><br>";
-        
-      // Stampiamo a schermo
+   $txt = " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos doloremque explicabo architecto aut a dolores odio totam reprehenderit nihil, ratione labore aperiam dolore ea excepturi officia iure, consequuntur voluptates. Consequatur!  <br><br>";
+   
+ // Stampiamo a schermo
 
-        echo $txt;
+   echo $txt;
 
-     // Stampiamo la lunghezza della frase
+// Stampiamo la lunghezza della frase
 
-        echo "Lunghezza Frase:<br><br> ";
-        
-        echo strlen($txt)  ;
+   echo "Lunghezza Frase:<br><br> ";
+   
+   echo strlen($txt)  ;
 
-        echo "  caratteri";
+   echo "  caratteri";
 
-        echo "<br><br>";
+   echo "<br><br>";
 
-      // Prendiamo la nostra variabile con la frase da censurare tramite variabile super globale $_GET
+ // Prendiamo la nostra variabile con la frase da censurare tramite variabile super globale $_GET
 
-       $badword = $_GET["badword"];
+  $badword = $_GET["badword"];
 
-     // creiamo un altra variabile che sarà il nostro testo modificato e tramite la funzione str_replace modifichiamo la frase 
+// creiamo un altra variabile che sarà il nostro testo modificato e tramite la funzione str_replace modifichiamo la frase 
 
-       $modifiedTxt = str_replace($badword,"***",$txt );
+  $modifiedTxt = str_replace($badword,"***",$txt );
 
-     //Stampiamo a schermo il testo modificato con la lunghezza della frase
+//Stampiamo a schermo il testo modificato con la lunghezza della frase
 
-       echo " $modifiedTxt <br>";
+  echo " $modifiedTxt <br>";
 
-       echo " Lunghezza Frase : <br><br>";
+  echo " Lunghezza Frase : <br><br>";
 
-       echo strlen( $modifiedTxt);
+  echo strlen( $modifiedTxt);
 
-       echo "  caratteri";
+  echo "  caratteri";
 
 
 
-     ?>
+?>
+   </div>
    
 </body>
 </html>

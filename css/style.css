@@ -4,5 +4,32 @@
     box-sizing: border-box;
 }
 body{
-    font-family: sans-serif;
+     font-family: sans-serif; 
+     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(203,82,82,0.5760504030713849) 24%, rgba(148,198,123,0.9261904590937937) 69%, rgba(0,212,255,1) 100%); 
+     color: red;
+     font-weight: bold;
+   
+    
+
+    
+}
+
+header{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.container{
+    width: 50%;
+    margin: auto;
+    border: 1px solid black;
+    background-color: thistle;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+   
+    
 }
