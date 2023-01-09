@@ -11,22 +11,35 @@
   
      <?php
 
-     $txt = " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos doloremque explicabo architecto aut a dolores odio totam reprehenderit nihil, ratione labore aperiam dolore ea excepturi officia iure, consequuntur voluptates. Consequatur!  <br>";
+     // Creiamo la variabile testo che andremo poi a modificare
+
+        $txt = " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos doloremque explicabo architecto aut a dolores odio totam reprehenderit nihil, ratione labore aperiam dolore ea excepturi officia iure, consequuntur voluptates. Consequatur!  <br>";
+        
+      // Stampiamo a schermo
+
         echo $txt;
 
+     // Stampiamo la lunghezza della frase
+
         echo "Lunghezza Frase: <br>";
+        
         echo strlen($txt)  ;
 
-      
-        $badword = $_GET["badword"];
+      // Prendiamo la nostra variabile con la frase da censurare tramite variabile super globale $_GET
 
-       $modifica = str_replace($badword,"***",$txt );
+       $badword = $_GET["badword"];
 
-     echo "$modifica <br>";
+     // creiamo un altra variabile che sarà il nostro testo modificato e tramite la funzione str_replace modifichiamo la frase 
 
-     echo " Lunghezza Frase : <br>";
+       $modifiedTxt = str_replace($badword,"***",$txt );
 
-     echo strlen($modifica);
+     //Stampiamo a schermo il testo modificato con la lunghezza della frase
+
+       echo " $modifiedTxt <br>";
+
+       echo " Lunghezza Frase : <br>";
+
+       echo strlen( $modifiedTxt);
 
 
 
