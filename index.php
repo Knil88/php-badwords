@@ -8,13 +8,19 @@
     <title>BadWord</title>
 </head>
 <body>
-     <h1>
-          
+  
      <?php
-          echo"Ciao a tutti"
-        
-            
-            ?>
-     </h1>
+
+     $txt = " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos doloremque explicabo architecto aut a dolores odio totam reprehenderit nihil, ratione labore aperiam dolore ea excepturi officia iure, consequuntur voluptates. Consequatur!  <br>";
+        echo $txt;
+
+        echo "Lunghezza Frase: <br>";
+        echo strlen($txt)  ;
+
+      
+        $badword = $_GET["badword"];
+
+     ?>
+   
 </body>
 </html>
