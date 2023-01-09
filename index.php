@@ -13,6 +13,8 @@
 
 <body>
 
+<!-- Titolo -->
+
      <header>
 
           <h1>
@@ -30,6 +32,8 @@
    $txt = " Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos doloremque explicabo architecto aut a dolores odio totam reprehenderit nihil, ratione labore aperiam dolore ea excepturi officia iure, consequuntur voluptates. Consequatur!  <br><br>";
    
  // Stampiamo a schermo
+   
+   echo "Frase Normale <br><br>";
 
    echo $txt;
 
@@ -52,6 +56,7 @@
   $modifiedTxt = str_replace($badword,"***",$txt );
 
 //Stampiamo a schermo il testo modificato con la lunghezza della frase
+  echo "Frase Modificata <br><br>";
 
   echo " $modifiedTxt <br>";
 
@@ -68,7 +73,7 @@
    </main>
 
    <footer>
-     
+
    </footer>
    
 </body>
