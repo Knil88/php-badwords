@@ -49,11 +49,12 @@
 
  // Prendiamo la nostra variabile con la frase da censurare tramite variabile super globale $_GET
 
-  $badword = $_GET["badword"];
+  $badWord = $_GET["badWord"];
+  
 
 // creiamo un altra variabile che sarà il nostro testo modificato e tramite la funzione str_replace modifichiamo la frase 
 
-  $modifiedTxt = str_replace($badword,"***",$txt );
+  $modifiedTxt = str_replace($badWord,"***",$txt );
 
 //Stampiamo a schermo il testo modificato con la lunghezza della frase
   echo "Frase Modificata <br><br>";
