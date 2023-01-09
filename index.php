@@ -41,9 +41,9 @@
 
    echo "Lunghezza Frase:<br><br> ";
    
-   echo strlen($txt)  ;
+   echo mb_strlen($txt)  ;
 
-   echo "  caratteri";
+   echo " caratteri";
 
    echo "<br><br>";
 
@@ -57,15 +57,16 @@
   $modifiedTxt = str_replace($badWord,"***",$txt );
 
 //Stampiamo a schermo il testo modificato con la lunghezza della frase
+
   echo "Frase Modificata <br><br>";
 
   echo " $modifiedTxt <br>";
 
   echo " Lunghezza Frase : <br><br>";
 
-  echo strlen( $modifiedTxt);
+  echo mb_strlen( $modifiedTxt);
 
-  echo "  caratteri";
+  echo " caratteri";
 
 
 
