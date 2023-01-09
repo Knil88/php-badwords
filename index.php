@@ -20,6 +20,16 @@
       
         $badword = $_GET["badword"];
 
+       $modifica = str_replace($badword,"***",$txt );
+
+     echo "$modifica <br>";
+
+     echo " Lunghezza Frase : <br>";
+
+     echo strlen($modifica);
+
+
+
      ?>
    
 </body>
